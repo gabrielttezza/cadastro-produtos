@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form action="cadastrar.php" method="POST">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Preço:</label><br>
+        <input type="number" name="preco" step="0.01" min="0.01" required><br><br>
+
+        <label>Descrição:</label><br>
+        <textarea name="descricao" required></textarea><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
